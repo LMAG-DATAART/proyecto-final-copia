@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faClipboardCheck, faHome, faUser, faBriefcase, faBuilding, faCalendarAlt, faBell, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import styles from "../Styles/Menu.module.css";
 import Header from './Header';
+import Notificaciones from "./Notificaciones";
 
 const Menu = () => {
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(true);
+    const [isNotificationsOpen, setNotificationsOpen] = useState(false);
 
     const toggleSubMenu = () => {
         setIsSubMenuOpen(!isSubMenuOpen);
@@ -15,6 +17,10 @@ const Menu = () => {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const toggleNotifications = () => {
+        setNotificationsOpen(!isNotificationsOpen);
     };
 
     return (
@@ -63,7 +69,7 @@ const Menu = () => {
                         )}
                     </li>
                     <li>
-                        <Link to="/Notificaciones"><FontAwesomeIcon icon={faBell} /> Notificaciones</Link>
+                        <Link onClick={toggleNotifications} to="/Notificaciones"><FontAwesomeIcon icon={faBell} /> Notificaciones</Link>
                     </li>
                     <li>
                         <Link to="/Login"><FontAwesomeIcon icon={faSignOutAlt} /> Cerrar Sesión</Link>
@@ -71,6 +77,7 @@ const Menu = () => {
                 </ul>
                 }
             </nav>
+                <Notificaciones isOpen={isNotificationsOpen} onClose={toggleNotifications} /> {/* Componente de Notificaciones */}
         </>
     );
 };
