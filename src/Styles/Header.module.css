@@ -1,0 +1,69 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #3B1E54;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1001;
+}
+
+.header .titleContainer {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header h1 {
+    color: #EEEEEE;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+    margin-left: -37px;
+}
+
+.toggleButton {
+    background: transparent;
+    border: none;
+    color: #EEEEEE; 
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .header {
+        height: 50px; /* Ajusta la altura del header para pantallas pequeñas */
+        padding: 0 10px; /* Reduce el padding */
+    }
+
+    .header h1 {
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .toggleButton {
+        font-size: 1.2rem; /* Ajusta el tamaño del icono */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 40px;
+        padding: 0 5px;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .toggleButton {
+        font-size: 1rem;
+    }
+}
