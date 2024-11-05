@@ -24,7 +24,7 @@ const Menu = () => {
     };
 
     return (
-        <>
+        <div className={styles.appContainer}>
             <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
             <nav className={`${styles.menu} ${!isMenuOpen ? styles.closed : ''}`}>
                 {isMenuOpen && 
@@ -78,7 +78,7 @@ const Menu = () => {
                 }
             </nav>
                 <Notificaciones isOpen={isNotificationsOpen} onClose={toggleNotifications} /> {/* Componente de Notificaciones */}
-        </>
+        </div>
     );
 };
 

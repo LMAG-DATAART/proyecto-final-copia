@@ -14,8 +14,8 @@ import Login from "./Components/Login";
  
 function App() {
   return (
-<>
-<Menu /> {/* Menú de navegación que puede incluir enlaces */}
+<div>
+<Menu />
 <Routes>
 <Route path="/" element={<Home />} />
 <Route path="/Perfil" element={<Perfil />} />
@@ -30,7 +30,7 @@ function App() {
 <Route path="/Notificaciones" element={<Notificaciones />} />
 <Route path="/Login" element={<Login />} />
 </Routes>
-</>
+</div>
   );
 }
  
