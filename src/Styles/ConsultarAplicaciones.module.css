@@ -34,6 +34,38 @@
     padding: 10px;
 }
 
+.selectPais {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.selectPais:focus {
+    outline: none;
+    border-color: #9B7EBD;
+}
+
+.barraBusqueda {
+    margin-bottom: 20px;
+}
+
+.inputBusqueda {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+
 /* Responsividad para pantallas pequeñas (móviles y tablets) */
 @media (max-width: 768px) {
     .title {
@@ -60,11 +92,11 @@
         display: block;
         width: 100%;
     }
-
+    
     .th {
         margin-bottom: 5px;
     }
-
+    
     .td {
         margin-bottom: 5px;
     }
