@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../Styles/Empresas.module.css';
 
-// Datos de ejemplo
 const empresasData = [
     { id: 1, nombre: 'Key Code', sector: 'Tecnología', url: 'https://www.keycode.com.co/' },
     { id: 2, nombre: 'Secretaria de Salud Bogotá', sector: 'Salud', url: 'https://www.saludcapital.gov.co/Paginas2/Inicio.aspx' },
@@ -10,7 +9,6 @@ const empresasData = [
     { id: 5, nombre: 'Ministerio de Tecnologias ', sector: 'Tecnologia', url: 'https://www.mintic.gov.co/portal/inicio/' },
     { id: 6, nombre: 'Ministerio de Educación ', sector: 'Educación', url: 'https://www.minedu.gov.co/https://www.mineducacion.gov.co/portal//inicio/' },
     { id: 7, nombre: 'LinkedIn Corporation ', sector: 'Bolsa de Empleo', url: 'https://co.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F' },
-    // Agrega más empresas según sea necesario
 ];
 
 const sectores = ['Tecnología', 'Salud', 'Finanzas', 'Educación', 'Bolsa de Empleo'];
