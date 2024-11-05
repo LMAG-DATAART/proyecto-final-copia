@@ -30,7 +30,21 @@
 }
   
 .notificacionesBody {
-    padding: 15px;
+    padding: 20px;
+}
+
+.notificacionBlock {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.notificacionBlock h2,
+.notificacionBlock p {
+  margin: 0; /* Asegura que no haya márgenes indeseados */
+}
+
+.notificacionBlock:hover {
+    transform: scale(1.1);
 }
 
 .toggleButton {

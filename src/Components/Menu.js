@@ -5,11 +5,14 @@ import { faBook, faClipboardCheck, faHome, faUser, faBriefcase, faBuilding, faCa
 import styles from "../Styles/Menu.module.css";
 import Header from './Header';
 import Notificaciones from "./Notificaciones";
+import { useNotificaciones } from './NotificacionesContext';
 
 const Menu = () => {
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(true);
-    const [isNotificationsOpen, setNotificationsOpen] = useState(false);
+
+    // Usar el contexto para abrir y cerrar las notificaciones
+    const { abrirNotificacion } = useNotificaciones(); // Obtenemos la función desde el contexto
 
     const toggleSubMenu = () => {
         setIsSubMenuOpen(!isSubMenuOpen);
@@ -19,8 +22,9 @@ const Menu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const toggleNotifications = () => {
-        setNotificationsOpen(!isNotificationsOpen);
+    const handleClickNotificaciones = (e) => {
+        e.preventDefault();
+        abrirNotificacion();
     };
 
     return (
@@ -68,8 +72,11 @@ const Menu = () => {
                             </ul>
                         )}
                     </li>
+                    {/* Aquí hemos cambiado el comportamiento del <Link> para manejar el click sin navegación */}
                     <li>
-                        <Link onClick={toggleNotifications} to="/Notificaciones"><FontAwesomeIcon icon={faBell} /> Notificaciones</Link>
+                        <Link onClick={handleClickNotificaciones}>
+                            <FontAwesomeIcon icon={faBell} /> Notificaciones
+                        </Link>
                     </li>
                     <li>
                         <Link to="/Login"><FontAwesomeIcon icon={faSignOutAlt} /> Cerrar Sesión</Link>
@@ -77,7 +84,8 @@ const Menu = () => {
                 </ul>
                 }
             </nav>
-                <Notificaciones isOpen={isNotificationsOpen} onClose={toggleNotifications} /> {/* Componente de Notificaciones */}
+            {/* Componente de Notificaciones siempre está disponible, visible o no */}
+            <Notificaciones />
         </div>
     );
 };
