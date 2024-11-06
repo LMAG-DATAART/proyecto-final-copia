@@ -1,3 +1,7 @@
+body {
+    background-color: #EEEEEE;
+}
+
 .menu {
     background-color: #3B1E54;
     padding: 5px;
@@ -11,13 +15,13 @@
     transition: width 0.6s, padding 0.6s;
 }
 
+/* Estado cerrado del menú */
 .menu.closed {
     width: 0;
     padding: 0;
     overflow: hidden;
     transition: width 0.6s, padding 0.6s;
 }
-
 
 .menu ul {
     list-style: none;
@@ -88,9 +92,26 @@
 }
 
 /* Estilos Responsivos */
+/* Para pantallas medianas y grandes */
+@media (max-width: 1024px) {
+    .menu {
+        width: 250px; /* Mantener el menú ancho en tabletas, pero más pequeño */
+    }
+
+    .menu li a, .menu li span {
+        padding: 12px 15px; /* Reducir un poco el padding */
+        font-size: 1.2rem; /* Reducir tamaño de texto */
+    }
+
+    .menu a i, .menu li span i {
+        font-size: 1.3rem; /* Reducir tamaño de los iconos */
+    }
+}
+
+/* Para pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
     .menu {
-        width: 200px; /* Ajustar el ancho del menú para pantallas pequeñas */
+        width: 200px; /* Ajustar el ancho del menú para pantallas más pequeñas */
     }
 
     .menu li a, .menu li span {
@@ -103,6 +124,7 @@
     }
 }
 
+/* Para pantallas muy pequeñas (hasta 480px) */
 @media (max-width: 480px) {
     .menu {
         width: 100%; /* Hacer que el menú ocupe el ancho completo en pantallas muy pequeñas */
@@ -121,5 +143,31 @@
     .menu a, .menu li span {
         justify-content: center; /* Centrar el contenido */
         padding: 10px 0; /* Ajustar el padding */
+    }
+
+    /* Estilos para los iconos */
+    .menu a i, .menu li span i {
+        font-size: 1.5rem; /* Ajustar el tamaño de los iconos en pantallas pequeñas */
+    }
+}
+
+/* Para dispositivos con orientación vertical (móviles en vertical) */
+@media (max-width: 375px) {
+    .menu {
+        width: 100%; /* Asegurarse de que el menú ocupe todo el ancho */
+        top: 60px; /* Mantener el menú en una posición adecuada */
+    }
+
+    .menu li {
+        width: 100%; /* Asegurar que cada ítem ocupe todo el ancho disponible */
+    }
+
+    .menu a, .menu li span {
+        padding: 10px 5px; /* Ajustar padding para pantallas más pequeñas */
+        font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .menu a i, .menu li span i {
+        font-size: 1.2rem; /* Ajustar los iconos a un tamaño adecuado */
     }
 }
