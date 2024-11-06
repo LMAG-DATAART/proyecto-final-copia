@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin-top: 40px;
+  font-size: bold;
+}
+
+.searchContainer {
+  flex: 1;
+  margin-bottom: 10px;
+  background-color: #D5C9E0;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.searchContainer h2 {
+  margin-bottom: 20px;
+  color: #EEEEEE;
+  background-color: #3B1E54;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.searchContainer input {
+  width: 90%; 
+  padding: 10px; 
+  font-size: medium;
+  margin-bottom: 10px; 
+  border: 1px solid #9B7EDB; 
+  border-radius: 5px; 
+}
+.searchContainer select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: medium;
+  border: 1px solid #9C7CC2;
+  border-radius: 5px;
+}
+
+.cardContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #9C7CC2;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(90%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  color: #341B54;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: #D5C9E0;
+}
+
+.card h3 {
+  margin: 0 0 5px;
+  color: #210E3A;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.card a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #9C7CC2;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Mantener en columna */
+  }
+
+  .searchContainer {
+    margin-right: 0; /* Quitar margen derecho */
+  }
+
+  .card {
+    width: calc(50% - 20px); /* Dos tarjetas por fila */
+  }
+}
+
+.buscartodas {
+  background-color: #EEEEEE;
+  color: #341B54;
+  margin-bottom: unset;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold ;
+}
+
+.buscartodas:hover {
+  background-color: #9B7EBD;
+  color: #341B54;
+  margin-bottom: unset;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Una tarjeta por fila */
+    margin: 10px 0; /* Ajustar márgenes para una tarjeta */
+  }
+
+  .searchContainer {
+    padding: 10px; /* Reducir padding en pantallas pequeñas */
+  }
+}
