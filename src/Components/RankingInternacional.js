@@ -3,7 +3,7 @@ import Styles from "../Styles/RankingInternacional.css"
 import { IoSearchSharp } from "react-icons/io5";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import img2 from "../Assets/img2.png"
+import img2 from "../assets/img2.png";
 
 
 const RankingInternacional= () => {

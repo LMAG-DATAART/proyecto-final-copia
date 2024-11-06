@@ -192,7 +192,7 @@ const Empleos = () => {
         </div>
       </div>
 
-      <footer className={styles.footer}>
+      <footer className={styles.foooter}>
         <h4>Patrocinadores.</h4>
         <div className={styles.sponsors}>
           <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer">
