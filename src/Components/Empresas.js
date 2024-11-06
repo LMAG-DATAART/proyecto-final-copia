@@ -33,7 +33,7 @@ const Empresas = () => {
     return (
         <div className={styles.container}>
             <div className={styles.searchContainer}>
-                <h2>Base Empresarial - Femploy</h2>
+                <h2>Base Empresarial</h2>
                 <input
                     type="text"
                     placeholder="Buscar empresa..."

@@ -1,21 +1,27 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 40px;
-  margin-top: 40px;
+  padding: 1px;
+  margin-top: 0;
   font-size: bold;
 }
 
 .searchContainer {
-  flex: 1;
-  margin-bottom: 10px;
-  background-color: #D5C9E0;
-  border-radius: 20px;
-  padding: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: #D5C9E0;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1235px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .searchContainer h2 {
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 10px;
   color: #EEEEEE;
   background-color: #3B1E54;
   border-radius: 3px;
@@ -23,20 +29,27 @@
 }
 
 .searchContainer input {
-  width: 90%; 
-  padding: 10px; 
-  font-size: medium;
-  margin-bottom: 10px; 
-  border: 1px solid #9B7EDB; 
-  border-radius: 5px; 
+  background-color: #EEEEEE;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #3B1E54;
+    margin-top: 0;
+    box-sizing: border-box;
+    margin-bottom: 0;
 }
 .searchContainer select {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: medium;
-  border: 1px solid #9C7CC2;
-  border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #3B1E54;
+    background-color: #EEEEEE;
+    color: #3B1E54;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .cardContainer {
@@ -47,7 +60,7 @@
 }
 
 .card {
-  border: 1px solid #9C7CC2;
+  border: 1px solid #3B1E54;
   border-radius: 5px;
   padding: 20px;
   margin: 10px;
@@ -58,13 +71,13 @@
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: #D5C9E0;
 }
 
 .card h3 {
   margin: 0 0 5px;
-  color: #210E3A;
+  color: #3B1E54;
 }
 
 .card p {
@@ -77,44 +90,94 @@
   color: #9C7CC2;
 }
 
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Mantener en columna */
-  }
-
-  .searchContainer {
-    margin-right: 0; /* Quitar margen derecho */
-  }
-
-  .card {
-    width: calc(50% - 20px); /* Dos tarjetas por fila */
-  }
-}
-
 .buscartodas {
   background-color: #EEEEEE;
   color: #341B54;
   margin-bottom: unset;
   padding: 10px;
   border-radius: 5px;
-  font-weight: bold ;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
 .buscartodas:hover {
-  background-color: #9B7EBD;
-  color: #341B54;
+  background-color: #341B54;
+  color: #EEEEEE;
   margin-bottom: unset;
   padding: 10px;
+  transform: scale(1.10);
+}
+
+/*Estilos Responsive*/
+@media (max-width: 1024px) {
+  /* Para pantallas de tabletas y pantallas medianas */
+  .searchContainer {
+    margin-top: 40px;
+    padding: 10px;
+  }
+
+  .searchContainer h2 {
+    font-size: 18px;
+  }
+
+  .searchContainer input, 
+  .searchContainer select {
+    font-size: 14px;
+  }
+
+  .card {
+    width: calc(45% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Para pantallas de móviles y pantallas más pequeñas */
+  .searchContainer {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .searchContainer h2 {
+    font-size: 16px;
+  }
+
+  .searchContainer input, 
+  .searchContainer select {
+    font-size: 14px;
+  }
+
+  .card {
+    width: calc(100% - 20px);
+  }
+
+  .buscartodas {
+    padding: 8px;
+  }
 }
 
 @media (max-width: 480px) {
-  .card {
-    width: 100%; /* Una tarjeta por fila */
-    margin: 10px 0; /* Ajustar márgenes para una tarjeta */
+  /* Para pantallas extra pequeñas, como móviles en orientación vertical */
+  .searchContainer {
+    margin-top: 10px;
+    padding: 5px;
   }
 
-  .searchContainer {
-    padding: 10px; /* Reducir padding en pantallas pequeñas */
+  .searchContainer h2 {
+    font-size: 14px;
+  }
+
+  .searchContainer input, 
+  .searchContainer select {
+    font-size: 12px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .buscartodas {
+    padding: 6px;
   }
 }
