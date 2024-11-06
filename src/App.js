@@ -7,7 +7,6 @@ import Empleos from "./Components/Empleos";
 import Cursos from "./Components/Cursos";
 import ConsultarAplicaciones from "./Components/ConsultarAplicaciones";
 import Empresas from "./Components/Empresas";
-import Eventos from "./Components/Eventos";
 import Login from "./Components/Login";
 import { NotificacionesProvider } from "./Components/NotificacionesContext";
 import RankingInternacional from "./Components/RankingInternacional";
@@ -19,7 +18,7 @@ import HackatonesInternacionales from "./Components/HackatonesInternacionales"
 
 
 function App() {
-  const location = useLocation();  {/* hook useLocation + una condición  renderiza el componente Menu, oculta el menu  inicio de sesión, mientras que se muestra en el resto de las páginas */}
+  const location = useLocation();
   return (
     
     <NotificacionesProvider>
