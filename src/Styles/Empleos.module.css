@@ -1,4 +1,4 @@
-/* Estilos para el contenedor principal */
+
 .container {
   max-width: 1500px;
   margin: 20px auto;
@@ -17,10 +17,10 @@
 
 .jobImage {
   align-items: center;
-  width: 60%; /* Ajusta el ancho según lo necesites */
-  height: auto; /* Mantiene la proporción de la imagen */
-  border-radius: 5px; /* Esquinas redondeadas, opcional */
-  margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
+  width: 60%; 
+  height: auto; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
 }
 .container .searchButton {
   margin: 10px 0;
@@ -183,7 +183,7 @@ button:hover {
 .jobCard {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra todo horizontalmente */
+  align-items: center; 
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
@@ -192,10 +192,10 @@ button:hover {
 }
 
 .jobImage img {
-  width: 100%; /* O ajusta al tamaño que necesites */
+  width: 100%; 
   height: auto;
   display: block;
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin: 0 auto; 
   border-radius: 5px;
 }
 

@@ -11,8 +11,7 @@ import Empresas from "./Components/Empresas";
 import Eventos from "./Components/Eventos";
 import Notificaciones from "./Components/Notificaciones";
 import Login from "./Components/Login";
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
+
  
 function App() {
   return (
