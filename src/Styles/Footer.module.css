@@ -1,0 +1,51 @@
+/* Aseguramos que el cuerpo de la página ocupe toda la altura */
+html, body {
+  height: 100%; /* Asegura que la altura de la página ocupe toda la pantalla */
+  margin: 0; /* Elimina los márgenes por defecto */
+}
+
+/* Contenedor principal que ocupará toda la altura */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+/* Estilos para el footer */
+.footer {
+  background-color: #3B1E54; /* Color morado oscuro */
+  color: white; /* Texto blanco */
+  text-align: center; /* Centrado del texto */
+  padding: 20px 0; /* Padding superior e inferior */
+  font-size: 1rem; /* Tamaño de fuente ajustado para hacerlo más pequeño */
+  width: 100%; /* Ocupa todo el ancho */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  margin-top: auto; /* Empuja el footer hacia el final */
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro del footer */
+  align-items: center; /* Alinea el contenido verticalmente */
+}
+
+/* Estilo del párrafo dentro del footer */
+.footer p {
+  margin: 0; /* Elimina el margen por defecto */
+  font-size: 1rem; /* Tamaño de fuente */
+  letter-spacing: 0.5px; /* Espaciado de letras para mayor claridad */
+  line-height: 1.5; /* Espaciado entre las líneas */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 0; /* Reduce el padding en pantallas más pequeñas */
+  }
+
+  .footer p {
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer p {
+    font-size: 0.8rem; /* Ajusta el tamaño de la fuente en pantallas muy pequeñas */
+  }
+}

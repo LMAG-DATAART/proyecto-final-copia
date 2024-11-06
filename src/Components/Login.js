@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from "../assets/img1.png";
+import img1 from "../Assets/img1.png";
 
 import Styles from "../Styles/Login.css";
 import { MdEmail } from "react-icons/md";
