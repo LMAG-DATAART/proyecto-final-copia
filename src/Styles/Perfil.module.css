@@ -254,8 +254,8 @@
 }
 
 .footer {
-  background-color: rgba(59, 30, 84, 0.85);
-  color: white;
+  background-color: #3B1E54;
+  color: #EEEEEE;
   padding: 20px 10px;
   text-align: center;
   border-top: 2px solid #9B7EB0;
@@ -316,12 +316,22 @@
     width: 100%;   
 }
 
+/* Media Queries para hacer el diseño más responsivo */
 
-@media (max-width: 768px) {
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  /* Ajuste del contenedor general */
+  .container {
+    padding: 5px; /* Reducir padding en pantallas pequeñas */
+    background-image: none; /* Desactivar imagen de fondo para mejorar rendimiento */
+    background-color: #f0f0f0; /* Establecer un color de fondo sólido */
+  }
+
+  /* Ajuste de la sección de perfil */
   .profileContentWrapper {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    margin-right: 0; /* Eliminar margen derecho */
+    margin-top: 10px; /* Reducir el margen superior */
   }
 
   .profileContent {
@@ -329,52 +339,228 @@
     margin-right: 0;
   }
 
+  /* Ajuste de la imagen de perfil */
+  .profileImageContainer {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
   .profileImage {
-    width: 120px;
+    width: 120px; /* Reducir tamaño de la imagen en pantallas pequeñas */
     height: 120px;
   }
 
+  /* Ajuste de los bloques de contenido */
+  .box {
+    padding: 15px; /* Reducir padding en pantallas pequeñas */
+    margin: 10px 0;
+  }
+
+  .box h3 {
+    font-size: 1.6rem; /* Reducir tamaño de fuente del título */
+  }
+
+  .box h4, .box p {
+    font-size: 0.9rem; /* Reducir tamaño de fuente de texto */
+  }
+
   .box textarea {
-    width: 80%; 
+    width: 100%; /* Hacer el textarea más ancho */
+    height: 100px; /* Ajustar la altura */
+    padding: 8px;
   }
 
+  .editButton {
+    padding: 8px 12px; /* Reducir tamaño del botón */
+    font-size: 0.9rem;
+  }
+
+  /* Ajuste de las secciones de datos personales y habilidades */
+  .personalDataSection,
+  .skillsSection {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  /* Ajuste de la lista de habilidades */
+  .skillsList {
+    padding: 0;
+  }
+
+  .skillItem {
+    font-size: 0.9rem; /* Reducir tamaño de fuente */
+  }
+
+  /* Ajuste de la sección de sugeridos */
   .suggestedFriendsSection {
-    width: 100%;
-    margin: 0;
-    padding: 15px;
+    width: 100%; /* Hacer que la sección ocupe el 100% */
+    margin-bottom: 20px;
   }
 
-  .suggested-users {
-    padding: 15px;
+  .suggestedFriend {
+    flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
+    align-items: center; /* Centrar el contenido */
+    margin-bottom: 15px;
   }
 
-  .footerContent {
-    flex-direction: column;
-    align-items: center;
+  .suggestedFriendImage {
+    width: 50px; /* Reducir tamaño de las imágenes de los amigos sugeridos */
+    height: 50px;
+  }
+
+  .addFriendButton {
+    padding: 6px 12px;
+    font-size: 0.9rem; /* Reducir tamaño del botón */
+  }
+
+  /* Ajuste de las notificaciones de trabajos */
+  .jobNotificationsSection {
+    margin-top: 15px;
+  }
+
+  .jobNotificationItem {
+    font-size: 0.9rem; /* Reducir tamaño de fuente */
+  }
+
+  /* Ajuste de la sección de pie de página */
+  .footer {
+    padding: 15px;
   }
 
   .footerSection {
     min-width: 100%;
-    text-align: center;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .box textarea {
-    width: 90%;
-  }
-
-  .profileImage {
-    width: 100px;
-    height: 100px;
   }
 
   .footerSection h4 {
     font-size: 1.5rem;
   }
 
+  .footerSection p {
+    font-size: 0.9rem;
+  }
+
   .footerBottom {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  /* Ajustes para la imagen de portada */
+  .coverPhotoSection {
+    position: relative;
+    height: 200px; /* Ajustar tamaño de la portada */
+  }
+
+  /* Ajuste de la imagen de perfil dentro de la portada */
+  .profilePhotoContainer {
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+  }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  /* Ajustes generales */
+  .profileContentWrapper {
+    flex-direction: column; /* Disposición en columna */
+    margin-top: 20px;
+  }
+
+  .profileContent {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .profileImage {
+    width: 130px; /* Ajustar tamaño de la imagen */
+    height: 130px;
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  .box h3 {
+    font-size: 1.8rem; /* Ajustar tamaño de título */
+  }
+
+  .box h4, .box p {
+    font-size: 1rem; /* Ajustar tamaño de texto */
+  }
+
+  .box textarea {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .editButton {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  /* Ajustes para los amigos sugeridos */
+  .suggestedFriendsSection {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .suggestedFriend {
+    flex-direction: row; /* Disposición en fila */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Ajustes para las notificaciones de trabajos */
+  .jobNotificationItem {
+    font-size: 1rem;
+  }
+}
+
+/* Para pantallas grandes (escritorios y portátiles) */
+@media (min-width: 1024px) {
+  /* Ajustes generales para pantallas grandes */
+  .profileContentWrapper {
+    flex-direction: row;
+  }
+
+  .profileContent {
+    margin-left: 20px;
+  }
+
+  .profileImage {
+    width: 150px; /* Imagen de perfil en su tamaño original */
+    height: 150px;
+  }
+
+  .box h3 {
+    font-size: 2rem;
+  }
+
+  .box h4, .box p {
+    font-size: 1.1rem;
+  }
+
+  .box textarea {
+    width: 40%;
+    height: auto;
+  }
+
+  .editButton {
+    padding: 10px 15px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footerSection h4 {
+    font-size: 1.9rem;
+  }
+
+  .footerSection p {
+    font-size: 1rem;
+  }
+
+  .footerBottom {
+    font-size: 1rem;
   }
 }

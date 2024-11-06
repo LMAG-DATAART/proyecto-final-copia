@@ -1,3 +1,4 @@
+/* Estilos para la tabla */
 .table {
     margin-top: 15px;
     width: 90%;
@@ -5,19 +6,22 @@
     margin-left: auto;               
     margin-right: auto;       
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
+/* Estilos para los encabezados de tabla */
 .header {
     background-color: #9B7EBD;
     color: #3B1E54;
 }
 
-.th {
+.th, .td {
     padding: 10px;
     text-align: center;
     border: 1px solid #3B1E54;
 }
 
+/* Estilos de filas */
 .row {
     transition: all 0.3s ease;
 }
@@ -27,12 +31,7 @@
     transform: scale(1.05);
 }
 
-.td {
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #3B1E54;
-}
-
+/* Títulos */
 .title {
     border-radius: 5px;
     margin-top: 20px;
@@ -44,6 +43,7 @@
     padding: 10px;
 }
 
+/* Select de país */
 .selectPais {
     width: 100%;
     padding: 10px;
@@ -61,6 +61,7 @@
     border-color: #9B7EBD;
 }
 
+/* Barra de búsqueda */
 .barraBusqueda {
     margin-bottom: 20px;
 }
@@ -76,7 +77,7 @@
     box-sizing: border-box;
 }
 
-/* Estilo para el contenedor de búsqueda (título + select + input) */
+/* Contenedor de búsqueda */
 .searchContainer {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     background-color: #D5C9E0;
@@ -90,6 +91,7 @@
     margin-right: auto;
 }
 
+/* Texto de carga */
 .loadingText {
     display: flex;
     justify-content: center;
@@ -97,10 +99,11 @@
     height: 100%;
 }
 
+/* Botón "Ver todas" */
 .verTodasButton {
     background-color: #EEEEEE;
     color: #341B54;
-    margin-bottom: unset;
+    margin-top: 0;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
@@ -111,32 +114,51 @@
 .verTodasButton:hover {
     background-color: #341B54;
     color: #EEEEEE;
-    margin-bottom: unset;
-    padding: 10px;
     transform: scale(1.10);
-}  
-
-
-/*Estilos Responsive*/
-/* Pantallas grandes (escritorio) */
-@media (max-width: 1350px) {
-    .table {
-        width: 80%;
-    }
-
-    .searchContainer {
-        max-width: 1200px;
-    }
-
-    .verTodasButton {
-        padding: 12px;
-    }
 }
 
-/* Tabletas y pantallas medianas */
-@media (max-width: 1024px) {
+/* Contenedor del cuerpo */
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/* Estilo del footer */
+.footer {
+    margin-top: auto;
+    background-color: #3B1E54;
+    color: #EEEEEE;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del párrafo dentro del footer */
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+/* Media Queries para hacer el diseño más responsivo */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
     .table {
-        width: 95%;
+        width: 100%;
+    }
+
+    .th, .td {
+        font-size: 14px;
+        padding: 8px;
     }
 
     .title {
@@ -144,82 +166,97 @@
         padding: 8px;
     }
 
-    .th, .td {
+    .selectPais, .inputBusqueda {
         font-size: 14px;
         padding: 8px;
     }
 
     .searchContainer {
-        margin-top: 40px;
+        margin-top: 50px;  /* Reduce el margen superior para móviles */
         padding: 10px;
-    }
-
-    .searchContainer input,
-    .searchContainer select {
-        font-size: 14px;
     }
 
     .verTodasButton {
-        padding: 10px;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+        padding: 15px 0;
     }
 }
 
-/* Móviles y pantallas pequeñas */
+/* Para pantallas medianas (tabletas en orientación vertical) */
 @media (max-width: 768px) {
     .table {
-        width: 100%;
-    }
-
-    .title {
-        font-size: 18px;
+        width: 95%;
     }
 
     .th, .td {
-        font-size: 12px;
-        padding: 6px;
+        font-size: 15px;
+        padding: 9px;
+    }
+
+    .title {
+        font-size: 22px;
+        padding: 9px;
+    }
+
+    .selectPais, .inputBusqueda {
+        font-size: 15px;
+        padding: 9px;
     }
 
     .searchContainer {
-        margin-top: 20px;
-        padding: 8px;
-    }
-
-    .searchContainer input,
-    .searchContainer select {
-        font-size: 12px;
+        margin-top: 60px;
+        padding: 12px;
     }
 
     .verTodasButton {
-        padding: 8px;
+        font-size: 15px;
+        padding: 9px;
+    }
+
+    .footer {
+        font-size: 0.95rem;
+        padding: 18px 0;
     }
 }
 
-/* Móviles en orientación vertical */
-@media (max-width: 480px) {
+/* Para pantallas grandes (escritorio y portátiles) */
+@media (max-width: 1024px) {
     .table {
         width: 100%;
-        font-size: 12px;
-    }
-
-    .title {
-        font-size: 16px;
     }
 
     .th, .td {
-        padding: 4px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .selectPais, .inputBusqueda {
+        font-size: 16px;
+        padding: 10px;
     }
 
     .searchContainer {
-        margin-top: 10px;
-        padding: 5px;
-    }
-
-    .searchContainer input,
-    .searchContainer select {
-        font-size: 12px;
+        margin-top: 70px;
+        padding: 15px;
     }
 
     .verTodasButton {
-        padding: 6px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .footer {
+        font-size: 1rem;
+        padding: 20px 0;
     }
 }

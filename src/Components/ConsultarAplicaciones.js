@@ -90,7 +90,7 @@ const ConsultarAplicaciones = () => {
   };
   
   return (
-    <div>
+    <div className={styles.bodyContainer}>
       <div className={styles.searchContainer}>
       <h1 className={styles.title}>Consultar Aplicaciones</h1>
 
@@ -157,6 +157,9 @@ const ConsultarAplicaciones = () => {
           </table>
         )}
       </div>
+        <footer className={styles.footer}>
+            <p>Femploy - Empoderando Mujeres en el Trabajo</p>
+        </footer>
     </div>
   );
 };
