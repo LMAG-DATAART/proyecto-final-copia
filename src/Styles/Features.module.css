@@ -1,0 +1,95 @@
+.features {
+  background-color: white; /* Fondo blanco para la sección */
+  padding: 40px;
+  text-align: center; /* Centra el texto y los elementos dentro del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  width: 90%; /* Limita el ancho del contenedor para que no ocupe toda la pantalla */
+  max-width: 1200px; /* Evita que se expanda demasiado en pantallas grandes */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  border-radius: 10px; /* Bordes redondeados para la sección */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Título de la sección (Caracteristicas Destacadas) */
+.title {
+  background-color: #3B1E54; /* Fondo morado */
+  color: white; /* Texto blanco */
+  padding: 30px 0; /* Espaciado interno más grande para que se vea más grande */
+  width: 100%; /* Hacemos que el título ocupe todo el ancho */
+  text-align: center; /* Centramos el texto dentro del cuadro */
+  font-size: 2.5rem; /* Aumentamos el tamaño del texto */
+  margin: 0; /* Elimina los márgenes */
+  border-radius: 15px 15px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+/* Contenedor de la lista de ítems */
+.featureList {
+  display: flex; /* Usa flexbox para organizar los ítems */
+  justify-content: center; /* Centra los ítems */
+  flex-wrap: wrap; /* Permite que los ítems se envuelvan en pantallas pequeñas */
+  gap: 20px; /* Espacio entre los ítems */
+  margin-top: 30px; /* Espacio superior entre el título y los ítems */
+}
+
+/* Cada ítem de la lista de características */
+.featureItem {
+  background-color: #f7f3f9; /* Fondo claro para cada ítem */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px;
+  width: 250px; /* Ancho fijo para cada ítem */
+  height: 220px; /* Altura ajustada para hacer los cuadros más compactos */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  flex-direction: column; /* Alineamos los contenidos en columna */
+  justify-content: space-between; /* Asegura que el título esté arriba y el texto abajo */
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center; /* Asegura que el texto esté centrado */
+  transition: transform 0.3s ease; /* Transición suave para el hover */
+  padding-top: 20px; /* Ajuste de espacio extra para el título */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+/* Títulos dentro de los ítems */
+.featureItem h3 {
+  font-size: 1.5rem; /* Tamaño de fuente del título dentro de cada ítem */
+  color: #3B1E54; /* Color de texto morado */
+  margin: 0 0 10px 0; /* Elimina márgenes y deja espacio debajo del título */
+  font-weight: bold;
+}
+
+/* Descripción dentro de cada ítem */
+.featureItem p {
+  font-size: 1rem; /* Tamaño de fuente más pequeño para la descripción */
+  color: #333; /* Color de texto oscuro para buena legibilidad */
+  margin: 0; /* Elimina márgenes para el párrafo */
+  line-height: 1.5; /* Aumenta el interlineado para mejorar la legibilidad */
+}
+
+/* Efecto hover para los ítems */
+.featureItem:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del cuadro cuando pasa el ratón */
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .featureItem {
+      width: 100%; /* Los ítems ocupan el 100% del ancho en pantallas pequeñas */
+      height: auto; /* Deja que la altura sea automática */
+      margin-bottom: 20px; /* Añade espacio entre los ítems en pantallas pequeñas */
+  }
+
+  .features {
+      width: 95%; /* Aumenta el ancho del contenedor en pantallas pequeñas */
+      padding: 20px; /* Reduce el padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .featureItem {
+      width: 100%; /* Los ítems ocupan todo el ancho disponible en pantallas muy pequeñas */
+  }
+
+  .title {
+      font-size: 1.8rem; /* Ajusta el tamaño del título */
+  }
+}

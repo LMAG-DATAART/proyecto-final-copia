@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "../Styles/HackatonesNacionales.css"
-// import img4 from "./assets/img4.png"
+// import img4 from "./Assets/img4.png"
 import img4 from '../Assets/img4.png';
 import img5 from "../Assets/img5.png";
 import img6 from "../Assets/img6.png";
