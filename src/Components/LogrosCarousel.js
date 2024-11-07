@@ -1,20 +1,17 @@
 import React from "react";
 import Slider from "react-slick";
 import styles from "../Styles/LogrosCarousel.module.css";
-import logro1 from "../assets/logro1.jpg";
-import logro2 from "../assets/logro2.jpg";
-import curso1 from "../assets/curso1.jpg";
-import curso2 from "../assets/curso2.jpg";
+import { logro1, logro2, curso1, curso2 } from "../assets";
 
 function LogrosCarousel() {
   const settings = {
-    dots: true, 
-    infinite: true, 
-    speed: 500, 
+    dots: true,
+    infinite: true,
+    speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1, 
-    autoplay: true, 
-    autoplaySpeed: 2000, 
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
 
   return (
