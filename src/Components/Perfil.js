@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from '../Styles/Perfil.module.css';
-import profileImage from '../Assets/fotoPerfilMujer.jpeg';
 import profileSugerencia from '../Assets/perfilimagen.jpeg';
 import empleoImagen from '../Assets/empleoNotificacion.jpg';
 import empleoImagen2 from '../Assets/EMPLEO2.jpg';
@@ -99,7 +98,6 @@ const Perfil = () => {
 
               <div className={styles.profileImageContainer}>
                 <img
-                  src={profileImage}
                   alt="Foto de perfil"
                   className={styles.profileImage}
                 />
