@@ -7,7 +7,6 @@ import empleoImagen2 from '../Assets/EMPLEO2.jpg';
 import empleoImagen3 from '../Assets/EMPLEO3.jpg';
 import empleoImagen4 from '../Assets/EMPLEO4.jpg';
 
-
 const Perfil = () => {
 
   const [userInfo, setUserInfo] = useState({
