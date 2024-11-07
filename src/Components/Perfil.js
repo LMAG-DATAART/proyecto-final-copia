@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import styles from '../Styles/Perfil.module.css';
+import profileImage from '../Assets/fotoPerfilMujer.jpeg';
+import profileSugerencia from '../Assets/perfilimagen.jpeg';
+import empleoImagen from '../Assets/empleoNotificacion.jpg';
+import empleoImagen2 from '../Assets/EMPLEO2.jpg';
+import empleoImagen3 from '../Assets/EMPLEO3.jpg';
+import empleoImagen4 from '../Assets/EMPLEO4.jpg';
 
 
 const Perfil = () => {
@@ -43,17 +49,17 @@ const Perfil = () => {
   });
 
   const suggestedUsers = [
-    { id: 1, name: 'Ana Pérez', },
-    { id: 2, name: 'Laura Gómez', },
-    { id: 3, name: 'Sofía Martínez', },
-    { id: 4, name: 'Clara Ruiz', },
+    { id: 1, name: 'Ana Pérez', profileImage: profileSugerencia },
+    { id: 2, name: 'Laura Gómez', profileImage: profileSugerencia },
+    { id: 3, name: 'Sofía Martínez', profileImage: profileSugerencia },
+    { id: 4, name: 'Clara Ruiz', profileImage: profileSugerencia },
   ];
 
   const jobNotifications = [
-    { id: 1, message: "Se ha publicado un nuevo trabajo en React en Bogotá.",},
-    { id: 2, message: "Oportunidad para Desarrollador Frontend en Cúcuta.", },
-    { id: 3, message: "Curso de JavaScript gratuito disponible en línea.", },
-    { id: 4, message: "Convocatoria abierta para el programa de pasantías.", },
+    { id: 1, message: "Se ha publicado un nuevo trabajo en React en Bogotá.", Image: empleoImagen },
+    { id: 2, message: "Oportunidad para Desarrollador Frontend en Cúcuta.", Image: empleoImagen2 },
+    { id: 3, message: "Curso de JavaScript gratuito disponible en línea.", Image: empleoImagen3 },
+    { id: 4, message: "Convocatoria abierta para el programa de pasantías.", Image: empleoImagen4 },
   ];
 
   const handleEdit = (section) => {
@@ -93,6 +99,7 @@ const Perfil = () => {
 
               <div className={styles.profileImageContainer}>
                 <img
+                  src={profileImage}
                   alt="Foto de perfil"
                   className={styles.profileImage}
                 />
