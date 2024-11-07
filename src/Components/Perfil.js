@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from '../Styles/Perfil.module.css';
-import profileSugerencia from '../Assets/perfilimagen.jpeg';
 import empleoImagen from '../Assets/empleoNotificacion.jpg';
 import empleoImagen2 from '../Assets/EMPLEO2.jpg';
 import empleoImagen3 from '../Assets/EMPLEO3.jpg';
@@ -48,10 +47,10 @@ const Perfil = () => {
   });
 
   const suggestedUsers = [
-    { id: 1, name: 'Ana Pérez', profileImage: profileSugerencia },
-    { id: 2, name: 'Laura Gómez', profileImage: profileSugerencia },
-    { id: 3, name: 'Sofía Martínez', profileImage: profileSugerencia },
-    { id: 4, name: 'Clara Ruiz', profileImage: profileSugerencia },
+    { id: 1, name: 'Ana Pérez', },
+    { id: 2, name: 'Laura Gómez', },
+    { id: 3, name: 'Sofía Martínez', },
+    { id: 4, name: 'Clara Ruiz', },
   ];
 
   const jobNotifications = [
