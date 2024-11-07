@@ -23,7 +23,7 @@
   justify-content: center;
 }
 
-.Assets img {
+.assets img {
   width: 100%; 
   height: auto; 
   border-radius: 10px;
@@ -44,7 +44,7 @@
     padding: 8px; /* Ajustar padding para que el título no sea tan grande */
   }
 
-  .Assets img {
+  .assets img {
     max-width: 100%; /* Asegurarse de que las imágenes no se deformen */
     border-radius: 8px; /* Bordes redondeados un poco más pequeños en móviles */
   }
@@ -62,7 +62,7 @@
     padding: 8px; /* Ajustar padding en tabletas */
   }
 
-  .Assets img {
+  .assets img {
     max-width: 100%; /* Asegurarse de que las imágenes se adapten correctamente */
     height: auto; /* Mantener las imágenes con proporción adecuada */
   }
@@ -79,7 +79,7 @@
     font-size: 24px; /* Mantener el tamaño de la fuente en pantallas grandes */
   }
 
-  .Assets img {
+  .assets img {
     max-width: 100%;
     height: auto;
   }

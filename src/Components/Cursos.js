@@ -1,14 +1,14 @@
 import React, { useState, useRef } from 'react';
 import Slider from "react-slick"; 
 import styles from '../Styles/Cursos.module.css'; 
-import cursoc from '../Assets/curso-C++.jpg';
-import cursoJavaScrip from '../Assets/Curs-JS.jpg';
-import pythonCurso from '../Assets/PYTON-CURSO.jpg';
-import sqlCurso from '../Assets/SQL-SERVER-curso.jpg';
-import sqlCursoBasico from '../Assets/curso-basico-sql.jpg';
-import cursAngular from '../Assets/CursoAngular.jpg';
-import cursonodeJS from '../Assets/cursoNodeJS.jpg';
-import cursoGitHub from '../Assets/CursoGibHub.jpg';
+import cursoc from '../assets/curso-C++.jpg';
+import cursoJavaScrip from '../assets/Curs-JS.jpg';
+import pythonCurso from '../assets/PYTON-CURSO.jpg';
+import sqlCurso from '../assets/SQL-SERVER-curso.jpg';
+import sqlCursoBasico from '../assets/curso-basico-sql.jpg';
+import cursAngular from '../assets/CursoAngular.jpg';
+import cursonodeJS from '../assets/cursoNodeJS.jpg';
+import cursoGitHub from '../assets/CursoGibHub.jpg';
 
 const Cursos = () => {
   const [keyword, setKeyword] = useState(''); 

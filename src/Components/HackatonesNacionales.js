@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../Styles/HackatonesNacionales.module.css";
-import img4 from '../Assets/img4.png';
-import img5 from "../Assets/img5.png";
-import img6 from "../Assets/img6.png";
-import img7 from "../Assets/img7.png";
+import img4 from '../assets/img4.png';
+import img5 from "../assets/img5.png";
+import img6 from "../assets/img6.png";
+import img7 from "../assets/img7.png";
 
 function HackatonesNacionales(){
 return(
