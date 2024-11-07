@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import styles from '../Styles/Perfil.module.css';
-import empleoImagen from '../Assets/empleoNotificacion.jpg';
-import empleoImagen2 from '../Assets/EMPLEO2.jpg';
-import empleoImagen3 from '../Assets/EMPLEO3.jpg';
-import empleoImagen4 from '../Assets/EMPLEO4.jpg';
 
 
 const Perfil = () => {
@@ -54,10 +50,10 @@ const Perfil = () => {
   ];
 
   const jobNotifications = [
-    { id: 1, message: "Se ha publicado un nuevo trabajo en React en Bogotá.", Image: empleoImagen },
-    { id: 2, message: "Oportunidad para Desarrollador Frontend en Cúcuta.", Image: empleoImagen2 },
-    { id: 3, message: "Curso de JavaScript gratuito disponible en línea.", Image: empleoImagen3 },
-    { id: 4, message: "Convocatoria abierta para el programa de pasantías.", Image: empleoImagen4 },
+    { id: 1, message: "Se ha publicado un nuevo trabajo en React en Bogotá.",},
+    { id: 2, message: "Oportunidad para Desarrollador Frontend en Cúcuta.", },
+    { id: 3, message: "Curso de JavaScript gratuito disponible en línea.", },
+    { id: 4, message: "Convocatoria abierta para el programa de pasantías.", },
   ];
 
   const handleEdit = (section) => {
