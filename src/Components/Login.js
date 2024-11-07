@@ -26,7 +26,7 @@ const Login = () => {
                 </div>
                 <div className={styles.check}>
                   <input type='checkbox' className={styles.checkInput} id='user-check'/>
-                  <label for="usercheck" className={styles.checkLabel}> Recordar Contraseña</label>
+                  <label htmlFor="usercheck" className={styles.checkLabel}> Recordar Contraseña</label>
                    <p className={styles.forgot} >Olvidastes la Contraseña</p>
                 </div>
                
