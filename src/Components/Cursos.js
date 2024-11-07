@@ -10,7 +10,7 @@ import {
   cursAngular,
   cursonodeJS,
   cursoGitHub,
-} from "../assets";
+} from "./assets";
 
 const Cursos = () => {
   const [keyword, setKeyword] = useState("");

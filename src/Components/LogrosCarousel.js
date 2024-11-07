@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import styles from "../Styles/LogrosCarousel.module.css";
-import { logro1, logro2, curso1, curso2 } from "../assets";
+import { logro1, logro2, curso1, curso2 } from "./assets";
 
 function LogrosCarousel() {
   const settings = {

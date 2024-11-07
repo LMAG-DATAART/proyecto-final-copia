@@ -1,5 +1,5 @@
 import React from "react";
-import { img1 } from "../assets";
+import { img1 } from "./assets";
 import styles from "../Styles/Login.module.css";
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";

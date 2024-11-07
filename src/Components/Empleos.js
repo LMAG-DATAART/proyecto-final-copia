@@ -12,7 +12,7 @@ import {
   mujerNubes,
   mujerGerente,
   mujerIngeniera,
-} from "../assets";
+} from "./assets";
 
 const Empleos = () => {
   const [keyword, setKeyword] = useState("");

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../Styles/HackatonesNacionales.module.css";
-import { img4, img5, img6, img7 } from "../assets";
+import { img4, img5, img6, img7 } from "./assets";
 
 function HackatonesNacionales(){
 return(

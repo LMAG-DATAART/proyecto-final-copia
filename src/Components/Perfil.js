@@ -7,7 +7,7 @@ import {
   empleoImagen2,
   empleoImagen3,
   empleoImagen4,
-} from "../assets";
+} from "./assets";
 
 const Perfil = () => {
   const [userInfo, setUserInfo] = useState({
