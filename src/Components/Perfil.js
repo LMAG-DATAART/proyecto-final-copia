@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../Styles/Perfil.module.css';
-import profileImage from '../Assets/fotoPerfilMujer.jpeg';
-import profileSugerencia from '../Assets/perfilimagen.jpeg';
+import profileImage from '../Assets/fotoPerfilMujer.jpg';
+import profileSugerencia from '../Assets/perfilimagen.jpg';
 import empleoImagen from '../Assets/empleoNotificacion.jpg';
 import empleoImagen2 from '../Assets/EMPLEO2.jpg';
 import empleoImagen3 from '../Assets/EMPLEO3.jpg';
